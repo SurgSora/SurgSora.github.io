@@ -106,10 +106,10 @@
         <div class="col-12 text-center">
           <h3>Abstract</h3>
             <hr style="margin-top:0px">
-            <h6 style="color:#8899a5"> 
+            <!-- <h6 style="color:#8899a5"> -->
               <!-- SyncDreamer is able to directly generate multiview consistent images, which allows 3D reconstruction by NeuS or NeRF without SDS loss.  -->
-              TL;DR:<i>Endora</i> enables the <b>high-fidelity medical video generation</b> on endoscopy scenes and demonstrates the <b>versatile ability through successful applications</b> in video-based disease diagnosis and 3D surgical scene reconstruction.
-            </h6>
+              <!-- TL;DR:<i>Endora</i> enables the <b>high-fidelity medical video generation</b> on endoscopy scenes and demonstrates the <b>versatile ability through successful applications</b> in video-based disease diagnosis and 3D surgical scene reconstruction. -->
+            <!-- </h6> -->
 
               <!-- <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
                   <source src="video/teaser.mp4" type="video/mp4">
@@ -119,28 +119,13 @@
 
           <p class="text-left">
             <!-- In this paper, we present a novel diffusion model called SyncDreamer that generates multiview-consistent images from a single-view image. Using pretrained large-scale 2D diffusion models, recent work Zero123 demonstrates the ability to generate plausible novel views from a single-view image of an object. However, maintaining consistency in geometry and colors for the generated images remains a challenge. To address this issue, we propose a synchronized multiview diffusion model that models the joint probability distribution of multiview images, enabling the generation of multiview-consistent images in a single reverse process. SyncDreamer synchronizes the intermediate states of all the generated images at every step of the reverse process through a 3D-aware feature attention mechanism that correlates the corresponding features across different views. Experiments show that SyncDreamer generates images with high consistency across different views, thus making it well-suited for various 3D generation tasks such as novel-view-synthesis, text-to-3D, and image-to-3D. -->
-            Generative models hold promise for revolutionizing medical education, robot-assisted surgery, and data augmentation for machine learning. 
-            Despite progress in generating 2D medical images, the complex domain of clinical video generation has largely remained untapped.
-            <br>
-            <br>
-            This paper introduces <i>Endora</i>, an innovative approach to generate medical videos to simulate clinical endoscopy scenes.
-            We present a novel generative model design that integrates a meticulously crafted spatial-temporal video transformer with advanced 2D vision foundation model priors, explicitly modeling spatial-temporal dynamics during video generation. 
-            <br>
-            <br>
-            We also pioneer the first public benchmark for endoscopy simulation with video generation models, adapting existing state-of-the-art methods for this endeavor.
-            <i>Endora</i> demonstrates exceptional visual quality in generating endoscopy videos, surpassing state-of-the-art methods in extensive testing.
-            <br>
-            <br>
-            Moreover, we explore how this endoscopy simulator can empower downstream video analysis tasks and even effectively create 3D scenes with multi-view consistency. 
-            <br>
-            <br>
-            In a nutshell, <i>Endora</i> marks a notable breakthrough in the deployment of generative AI for clinical endoscopy research, setting a substantial stage for further advances in medical content generation.
+	  Medical video generation has transformative potential for enhancing surgical understanding and pathology insights through precise and controllable visual representations. However, current models face limitations in controllability and authenticity. To bridge this gap, we propose SurgSora, a motion-controllable surgical video generation framework that uses a single input frame and user-controllable motion cues. SurgSora consists of three key modules: the Dual Semantic Injector (DSI), which extracts object-relevant RGB and depth features from the input frame and integrates them with segmentation cues to capture detailed spatial features of complex anatomical structures; the Decoupled Flow Mapper (DFM), which fuses optical flow with semantic-RGB-D features at multiple scales to enhance temporal understanding and object spatial dynamics; and the Trajectory Controller (TC), which allows users to specify motion directions and estimates sparse optical flow, guiding the video generation process. The fused features are used as conditions for a frozen Stable Diffusion model to produce realistic, temporally coherent surgical videos. Extensive evaluations demonstrate that SurgSora outperforms state-of-the-art methods in controllability and authenticity, showing its potential to advance surgical video generation for medical education, training, and research.
           </p>
 
           
-          <div class="video-container">
+          <!-- <div class="video-container">
             <iframe width="650" height="375" src="https://www.youtube.com/embed/VBw3XtGdRu8?si=Qn-xVOG_Kv9SAWAq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
+          </div> -->
 
         <p class="text-center">
           <!-- Reverse process of SyncDreamer's multiview diffusion. -->
